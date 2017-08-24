@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <form class="guitarForm" action="/" method="post">
+    <input type="text" name="model" value="" placeholder="model">
+    <input type="submit" name="model" value="model">
+    <br>
+    <input type="text" name="make" value="" placeholder="make">
+    <input type="submit" name="make" value="make">
+    <br>
+    <input type="text" name="year" value="" placeholder="year">
+    <input type="submit" name="year" value="year">
+    <br>
+    <input type="text" name="price" value="" placeholder="price">
+    <input type="submit" name="price" value="price">
+    <br>
+    <input type="text" name="condition" value="" placeholder="condition">
+    <input type="submit" name="condition" value="condition">
+    <br>
+    <input type="text" name="location" value="" placeholder="location">
+    <input type="submit" name="location" value="location">
+  </form>
+  <br>
+  <br>
+  <br>
+
+  <hr>
+
+  <section>
+    {{#guitar}}
+      <p>{{make}}</p>
+      <p>{{model}}</p>
+      <p>{{year}}</p>
+      <p>{{condition}}</p>
+      <p>{{price}}</p>
+    {{/guitar}}
+  </section>
+</body>
+
+</html>
